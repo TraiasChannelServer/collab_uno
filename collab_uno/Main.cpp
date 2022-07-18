@@ -2,6 +2,9 @@
 // #include <Siv3D.hpp> // OpenSiv3D v0.6.4
 
 #include "Scene/TitleScene.h"
+#include "Scene/GameSettingsScene.h"
+#include "Scene/GameScene.h"
+#include "Scene/AppSettingsScene.h"
 
 void Main()
 {
@@ -13,10 +16,14 @@ void Main()
 
 	// アセット管理については以下を参照
 	// https://zenn.dev/reputeless/books/siv3d-documentation/viewer/tutorial-asset
+	FontAsset::Register(U"Title", FontMethod::MSDF, 80, Typeface::Medium);
 	FontAsset::Register(U"Menu", FontMethod::MSDF, 40, Typeface::Medium);
 
 	App manager;
 	manager.add<TitleScene>(SceneType::Title);
+	manager.add<GameSettingsScene>(SceneType::GameSettings);
+	manager.add<GameScene>(SceneType::Game);
+	manager.add<AppSettingsScene>(SceneType::AppSettings);
 
 	while (System::Update())
 	{

@@ -3,6 +3,9 @@
 enum class SceneType
 {
 	Title,
+	GameSettings,
+	Game,
+	AppSettings
 };
 
 struct SharedData
