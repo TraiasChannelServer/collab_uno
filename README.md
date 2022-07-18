@@ -5,7 +5,7 @@
 ### stdafx.hについて
 `#include <...>`のような基本的にファイル内容が変更されないもののインクルードについては`stdafx.h`にインクルードを記述します。もちろん、ファイル内容がほとんど変更されないことが分かっていれば`#inlcude "..."`も記述可能です。プロジェクトの設定によってプロジェクト内の全てのファイルは`stdafx.h`をインクルードしていることになっているので各ファイルに`#include "stdafx.h"`と書く必要はありません。`#include <Siv3D.hpp>`も`stdafx.h`に記述してあるので書く必要はありません。
 ### 作業ディレクトリ
-作業ディレクトリは`collab_uno/App`に設定されています。画像は`collab_uno/App/asset/img`音楽は`collab_uno/App/asset/bgm`に保存します。画像や音楽を読み込む場合作業ディレクトリからの相対ディレクトリを記述します。例えば`collab_uno/App/aseet/img/A.png`を読み込む場合ソースファイルには`const Texture texture(U"asset/img/A.png");`と記述します。
+作業ディレクトリは`collab_uno/App`に設定されています。画像は`collab_uno/App/asset/img`音楽は`collab_uno/App/asset/bgm`に保存します。画像や音楽を読み込む場合作業ディレクトリからの相対パスを記述します。例えば`collab_uno/App/aseet/img/A.png`を読み込む場合ソースファイルには`const Texture texture(U"asset/img/A.png");`と記述します。
 ## コーディング規約
 ### 基本のデータ型
 データ型は次のものを使用してください。
