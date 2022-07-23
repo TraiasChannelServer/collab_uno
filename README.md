@@ -10,7 +10,7 @@
 ### 基本のデータ型
 データ型は次のものを使用してください。
 
-[1.9 基本的なデータ型](https://zenn.dev/reputeless/books/siv3d-documentation/viewer/course-quick-turorial)
+[Siv3Dのクラス一覧](https://siv3d.github.io/ja-jp/api/classes/)
 
 この中に望みのデータ型がない場合のみ、必要なインクルードをしたりしてください。
 ### インクルードの書き方
