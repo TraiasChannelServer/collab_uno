@@ -3,8 +3,7 @@
 // 本当にインクルードする必要があるのか、以下を見て確認してください
 //
 // Siv3Dではデータ型は以下を用います
-// https://zenn.dev/reputeless/books/siv3d-documentation/viewer/course-quick-turorial
-// 1.9 基本的なデータ型
+// https://siv3d.github.io/ja-jp/api/classes/
 //
 // bool						ブーリアン型 (false または true)
 // int8						符号付き 8 - bit 整数型(-128 ～ 127)
